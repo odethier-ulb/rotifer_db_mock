@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World - My Mock Website</title>
+    <title>Rotifer Database Mock Website</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tools.css">
 </head>
 <body>
     <header>
         <nav>
             <div class="logo">
+                <img src="images/logos/rotifer_database_logo-400x152.png" alt="Rotifer Database Logo" class="logo-image">
                 <h1>Rotifer Database</h1>
             </div>
             <ul class="nav-links">
@@ -32,19 +34,32 @@
 
         <section class="features">
             <div class="container">
-                <h3>Site Features</h3>
-                <div class="feature-grid">
-                    <div class="species-card">
-                        <h4>Species</h4>
-                        <p>Explore rotifer species</p>
+                <div class="tools-grid">
+                    <div class="tool-tile blast-tile" onclick="openTool('blast')">
+                        <div class="tool-icon"><img src="images/logos/Philodinidae.svg" style="width: 60px; height: 60px;"></div>
+                        <div class="tool-content">
+                            <h3>Species</h3>
+                            <p>Explore rotifer species</p>
+                        </div>
+                        <div class="tool-arrow">→</div>
                     </div>
-                    <div class="tools-card">
-                        <h4>Tools</h4>
-                        <p>Perform bioinformatic analyses</p>
+
+                    <div class="tool-tile jbrowse-tile" onclick="window.location.href='tools.html'">
+                        <div class="tool-icon">🛠️</div>
+                        <div class="tool-content">
+                            <h3>Tools</h3>
+                            <p>Perform bioinformatic analyses</p>
+                        </div>
+                        <div class="tool-arrow">→</div>
                     </div>
-                    <div class="litterature-card">
-                        <h4>Litterature</h4>
-                        <p>Retrieve the latest rotifer litterature</p>
+
+                    <div class="tool-tile phylogeny-tile" onclick="openTool('phylogeny')">
+                        <div class="tool-icon">📖</div>
+                        <div class="tool-content">
+                            <h3>Litterature</h3>
+                            <p>Retrieve the latest rotifer litterature</p>
+                        </div>
+                        <div class="tool-arrow">→</div>
                     </div>
                 </div>
             </div>

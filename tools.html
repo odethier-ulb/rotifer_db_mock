@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bioinformatics Tools - Rotifer Database</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tools.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/logos/rotifer_database_logo-400x152.png" alt="Rotifer Database Logo" class="logo-image">
+                <h1>Rotifer Database</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="tools.html" class="active">Tools</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>🧬 Bioinformatics Tools</h2>
+                <p>Analysis tools for rotifer research and genomics</p>
+            </div>
+        </section>
+
+        <section class="tools-section">
+            <div class="container">
+                <div class="tools-grid">
+                    
+                    <div class="tool-tile blast-tile" onclick="openTool('blast')">
+                        <div class="tool-icon">🔍</div>
+                        <div class="tool-content">
+                            <h3>BLAST</h3>
+                            <p>Basic Local Alignment Search Tool</p>
+                            <div class="tool-tags">
+                                <span class="tag">Nucleotide</span>
+                                <span class="tag">Protein</span>
+                            </div>
+                        </div>
+                        <div class="tool-arrow">→</div>
+                    </div>
+
+                    <div class="tool-tile jbrowse-tile" onclick="openTool('jbrowse')">
+                        <div class="tool-icon">🧭</div>
+                        <div class="tool-content">
+                            <h3>JBrowse</h3>
+                            <p>Interactive genome browser for exploring genomic data</p>
+                            <div class="tool-tags">
+                                <span class="tag">Genome Browser</span>
+                                <span class="tag">Visualization</span>
+                            </div>
+                        </div>
+                        <div class="tool-arrow">→</div>
+                    </div>
+
+                    <div class="tool-tile phylogeny-tile" onclick="openTool('phylogeny')">
+                        <div class="tool-icon">🌳</div>
+                        <div class="tool-content">
+                            <h3>Phylogeny</h3>
+                            <p>Construct and analyze phylogenetic trees</p>
+                            <div class="tool-tags">
+                                <span class="tag">Tree Building</span>
+                            </div>
+                        </div>
+                        <div class="tool-arrow">→</div>
+                    </div>
+                </div>
+
+                <div class="tools-info">
+                    <div class="info-card">
+                        <h4>🚀 Getting Started</h4>
+                        <p>Click on any tool above to access the analysis interface.</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <h4>📚 Documentation</h4>
+                        <p>Comprehensive guides and tutorials are available for each tool.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Rotifer Database. Built with GitHub Pages.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/tools.js"></script>
+</body>
+</html>
