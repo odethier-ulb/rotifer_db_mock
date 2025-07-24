@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rotifer Database Mock Website</title>
+    <link rel="icon" href="images/logos/favicon.png" type="image/png">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/tools.css">
 </head>
@@ -23,10 +24,10 @@
     </header>
 
     <main>
-        <section class="hero">
+        <section class="hero-home">
             <div class="hero-content">
-                <h2>Hello World!</h2>
-                <p>Welcome to my mock website. This is a simple static site hosted on GitHub Pages.</p>
+                <h2 id="greeting">Hello World!</h2>
+                <p>Welcome to the Rotifer Database mock website.</p>
                 <button onclick="showMessage()" class="cta-button">Click Me!</button>
                 <div id="message" class="hidden"></div>
             </div>
@@ -35,7 +36,7 @@
         <section class="features">
             <div class="container">
                 <div class="tools-grid">
-                    <div class="tool-tile blast-tile" onclick="openTool('blast')">
+                    <div class="tool-tile blast-tile" onclick="window.location.href='species.html'">
                         <div class="tool-icon"><img src="images/logos/Philodinidae.svg" style="width: 60px; height: 60px;"></div>
                         <div class="tool-content">
                             <h3>Species</h3>
@@ -43,7 +44,7 @@
                         </div>
                         <div class="tool-arrow">→</div>
                     </div>
-
+                    <!-- 🧬-->
                     <div class="tool-tile jbrowse-tile" onclick="window.location.href='tools.html'">
                         <div class="tool-icon">🛠️</div>
                         <div class="tool-content">
@@ -53,11 +54,11 @@
                         <div class="tool-arrow">→</div>
                     </div>
 
-                    <div class="tool-tile phylogeny-tile" onclick="openTool('phylogeny')">
+                    <div class="tool-tile phylogeny-tile" onclick="window.location.href='literature.html'">
                         <div class="tool-icon">📖</div>
                         <div class="tool-content">
-                            <h3>Litterature</h3>
-                            <p>Retrieve the latest rotifer litterature</p>
+                            <h3>Literature</h3>
+                            <p>Retrieve the latest rotifer literature</p>
                         </div>
                         <div class="tool-arrow">→</div>
                     </div>

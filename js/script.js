@@ -3,11 +3,8 @@
 function showMessage() {
     const messageDiv = document.getElementById('message');
     const messages = [
-        "🎉 Hello from JavaScript!",
-        "✨ This site is working perfectly!",
-        "🚀 GitHub Pages is awesome!",
-        "💡 Ready to build something amazing?",
-        "🎯 All systems operational!"
+        "😕 Oops, it does nothing for now",
+        "😾 Told you it was a mock website!",
     ];
     
     const randomMessage = messages[Math.floor(Math.random() * messages.length)];
@@ -34,10 +31,6 @@ document.addEventListener('DOMContentLoaded', function() {
             }, 150);
         });
     });
-    
-    // Console log to confirm JavaScript is working
-    console.log('🎉 Mock website loaded successfully!');
-    console.log('📊 GitHub Pages integration working!');
 });
 
 // Add current year to footer
@@ -47,3 +40,24 @@ document.addEventListener('DOMContentLoaded', function() {
         footer.innerHTML = footer.innerHTML.replace('2024', new Date().getFullYear());
     }
 });
+
+function setTimeBasedGreeting() {
+    const now = new Date();
+    const hour = now.getHours();
+    let greeting;
+
+    if (hour >= 5 && hour < 12) {
+        greeting = "Good morning!";
+    } else if (hour >= 12 && hour < 17) {
+        greeting = "Good afternoon!";
+    } else if (hour >= 17 && hour < 22) {
+        greeting = "Good evening!";
+    } else {
+        greeting = "Good night!";
+    }
+
+    document.getElementById('greeting').textContent = greeting;
+}
+
+// Call the function when the page loads
+document.addEventListener('DOMContentLoaded', setTimeBasedGreeting);

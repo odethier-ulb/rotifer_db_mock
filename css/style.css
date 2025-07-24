@@ -86,6 +86,15 @@ main {
     margin-top: 80px;
 }
 /* #abdbe3   #764ba2*/
+/* background: linear-gradient(135deg, #667eea 0%, #abdbe3 100%); */
+.hero-home {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+                url('../images/background/home_background.png') center center/cover no-repeat;
+    color: white;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
 .hero {
     background: linear-gradient(135deg, #667eea 0%, #abdbe3 100%);
     color: white;

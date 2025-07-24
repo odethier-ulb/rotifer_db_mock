@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Literature - Rotifer Database</title>
+    <link rel="icon" href="images/logos/favicon.png" type="image/png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tools.css">
+    <link rel="stylesheet" href="css/literature.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/logos/rotifer_database_logo-400x152.png" alt="Rotifer Database Logo" class="logo-image">
+                <h1>Rotifer Database</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="literature.html" class="active">Literature</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-home">
+            <div class="hero-content">
+                <h2>📖 Rotifer Literature</h2>
+                <p>Find out about the latest rotifer research</p>
+            </div>
+        </section>
+
+        <section class="literature-section">
+            <div class="container">
+                <div class="search-controls">
+                    <div class="search-bar">
+                        <input type="text" id="searchInput" placeholder="🔍 Search literature..." class="search-input">
+                        <button onclick="clearSearch()" class="clear-btn">Clear</button>
+                    </div>
+                    <div class="results-info">
+                        <span id="resultsCount">Showing 20 of 20 publications</span>
+                    </div>
+                </div>
+
+                <div class="table-container">
+                    <table id="literatureTable" class="literature-table">
+                        <thead>
+                            <tr>
+                                <th onclick="sortTable(0)" class="sortable">
+                                    Title 
+                                    <span class="sort-arrow">↕️</span>
+                                </th>
+                                <th onclick="sortTable(1)" class="sortable">
+                                    Journal 
+                                    <span class="sort-arrow">↕️</span>
+                                </th>
+                                <th onclick="sortTable(2)" class="sortable">
+                                    Author(s) 
+                                    <span class="sort-arrow">↕️</span>
+                                </th>
+                                <th onclick="sortTable(3)" class="sortable">
+                                    Date 
+                                    <span class="sort-arrow">↕️</span>
+                                </th>
+                                <th onclick="sortTable(4)" class="sortable">
+                                    DOI 
+                                    <span class="sort-arrow">↕️</span>
+                                </th>
+                                <th onclick="sortTable(5)" class="sortable">
+                                    Year 
+                                    <span class="sort-arrow">↕️</span>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody id="tableBody">
+                            <tr>
+                                <td>A Jurassic acanthocephalan illuminates the origin of thorny-headed worms</td>
+                                <td>Nature</td>
+                                <td>Luo, C.; Parry, L.A.; Boudinot, B.E.; Wang, S.; Jarzembowski, E.A.; Zhang, H.; Wang, B.</td>
+                                <td>2025-01-01</td>
+                                <td><a href="https://doi.org/10.1038/s41586-025-08830-5" class="doi-link" target="_blank">10.1038/s41586-025-08830-5</a></td>
+                                <td>2025</td>
+                            </tr>
+                            <tr>
+                                <td>Ionizing radiation responses appear incidental to desiccation responses in the bdelloid rotifer Adineta vaga</td>
+                                <td>BMC Biology</td>
+                                <td>Moris, V.C.; Bruneau, L.; Berthe, J.; Heuskin, A.C.; Penninckx, S.; Ritter, S.; Weber, U.; Durante, M.; Danchin, E.G.J.; Hespeels, B.; Doninck, K.V.</td>
+                                <td>2024-01-15</td>
+                                <td><a href="https://doi.org/10.1186/s12915-023-01807-8" class="doi-link" target="_blank">10.1186/s12915-023-01807-8</a></td>
+                                <td>2024</td>
+                            </tr>
+                            <tr>
+                                <td>Bdelloid rotifers deploy horizontally acquired biosynthetic genes against a fungal pathogen</td>
+                                <td>Nature Communications</td>
+                                <td>Nowell, R.W.; Rodriguez, F.; Hecox-Lea, B.J.; Mark Welch, D.B.; Arkhipova, I.R.; Barraclough, T.G.; Wilson, C.G.</td>
+                                <td>2024-07-10</td>
+                                <td><a href="https://doi.org/10.1038/s41467-024-49919-1" class="doi-link" target="_blank">10.1038/s41467-024-49919-1</a></td>
+                                <td>2024</td>
+                            </tr>
+                            <tr>
+                                <td>Whole-genome analyses converge to support the Hemirotifera hypothesis within Syndermata (Gnathifera)</td>
+                                <td>Hydrobiologia</td>
+                                <td>Vasilikopoulos, A.; Herlyn, H.; Fontaneto, D.; Wilson, C.G.; Nowell, R.W.; Flot, J.F.; Barraclough, T.G.; Van Doninck, K.</td>
+                                <td>2024-06-01</td>
+                                <td><a href="https://doi.org/10.1007/s10750-023-05451-9" class="doi-link" target="_blank">10.1007/s10750-023-05451-9</a></td>
+                                <td>2024</td>
+                            </tr>
+                            <tr>
+                                <td>Horizontal acquisition of a DNA ligase improves DNA damage tolerance in eukaryotes</td>
+                                <td>Nature Communications</td>
+                                <td>Nicolas, E.; Simion, P.; Guérineau, M.; Terwagne, M.; Colinet, M.; Virgo, J.; Lingurski, M.; Boutsen, A.; Dieu, M.; Hallet, B.; Van Doninck, K.</td>
+                                <td>2023-11-22</td>
+                                <td><a href="https://doi.org/10.1038/s41467-023-43075-8" class="doi-link" target="_blank">10.1038/s41467-023-43075-8</a></td>
+                                <td>2023</td>
+                            </tr>
+                            <tr>
+                                <td>Genomic signature of sexual reproduction in the bdelloid rotifer Macrotrachella quadricornifera</td>
+                                <td>Genetics</td>
+                                <td>Laine, V.N.; Sackton, T.B.; Meselson, M.</td>
+                                <td>2022-02-01</td>
+                                <td><a href="https://doi.org/10.1093/genetics/iyab221" class="doi-link" target="_blank">10.1093/genetics/iyab221</a></td>
+                                <td>2022</td>
+                            </tr>
+                            <tr>
+                                <td>DNA repair during nonreductional meiosis in the asexual rotifer Adineta vaga</td>
+                                <td>Science Advances</td>
+                                <td>Terwagne, M.; Nicolas, E.; Hespeels, B.; Herter, L.; Virgo, J.; Demazy, C.; Heuskin, A.C.; Hallet, B.; Van Doninck, K.</td>
+                                <td>2022-11-30</td>
+                                <td><a href="https://doi.org/10.1126/sciadv.adc8829" class="doi-link" target="_blank">10.1126/sciadv.adc8829</a></td>
+                                <td>2022</td>
+                            </tr>
+                            <tr>
+                                <td>Genomics and transcriptomics of epizoic Seisonidea (Rotifera, syn. Syndermata) reveal strain formation and gradual gene loss with growing ties to the host</td>
+                                <td>BMC Genomics</td>
+                                <td>Mauer, K.M.; Schmidt, H.; Dittrich, M.; Fröbius, A.C.; Hellmann, S.L.; Zischler, H.; Hankeln, T.; Herlyn, H.</td>
+                                <td>2021-08-15</td>
+                                <td><a href="https://doi.org/10.1186/s12864-021-07857-y" class="doi-link" target="_blank">10.1186/s12864-021-07857-y</a></td>
+                                <td>2021</td>
+                            </tr>
+                            <tr>
+                                <td>Chromosome-level genome assembly reveals homologous chromosomes and recombination in asexual rotifer Adineta vaga</td>
+                                <td>Science Advances</td>
+                                <td>Simion, P.; Narayan, J.; Houtain, A.; Derzelle, A.; Baudry, L.; Nicolas, E.; Arora, R.; Cariou, M.; Cruaud, C.; Gaudray, F.R.; et al.</td>
+                                <td>2021-10-08</td>
+                                <td><a href="https://doi.org/10.1126/sciadv.abg4216" class="doi-link" target="_blank">10.1126/sciadv.abg4216</a></td>
+                                <td>2021</td>
+                            </tr>
+                            <tr>
+                                <td>Evolutionary dynamics of transposable elements in bdelloid rotifers</td>
+                                <td>eLife</td>
+                                <td>Nowell, R.W.; Wilson, C.G.; Almeida, P.; Schiffer, P.H.; Fontaneto, D.; Becks, L.; Rodriguez, F.; Arkhipova, I.R.; Barraclough, T.G.</td>
+                                <td>2021-03-23</td>
+                                <td><a href="https://doi.org/10.7554/eLife.63194" class="doi-link" target="_blank">10.7554/eLife.63194</a></td>
+                                <td>2021</td>
+                            </tr>
+                            <tr>
+                                <td>The genome of the marine monogonont rotifer Brachionus rotundiformis and insight into species-specific detoxification components in Brachionus spp.</td>
+                                <td>Comparative Biochemistry and Physiology Part D: Genomics and Proteomics</td>
+                                <td>Kang, H.M.; Kim, M.S.; Choi, B.S.; Kim, D.H.; Kim, H.J.; Hwang, U.K.; Hagiwara, A.; Lee, J.S.</td>
+                                <td>2020-12-01</td>
+                                <td><a href="https://doi.org/10.1016/j.cbd.2020.100714" class="doi-link" target="_blank">10.1016/j.cbd.2020.100714</a></td>
+                                <td>2020</td>
+                            </tr>
+                            <tr>
+                                <td>Genomic signatures of recombination in a natural population of the bdelloid rotifer Adineta vaga</td>
+                                <td>Nature Communications</td>
+                                <td>Vakhrusheva, O.A.; Mnatsakanova, E.A.; Galimov, Y.R.; Neretina, T.V.; Gerasimov, E.S.; Naumenko, S.A.; Ozerova, S.G.; Zalevsky, A.O.; Yushenova, I.A.; Rodriguez, F.; et al.</td>
+                                <td>2020-12-14</td>
+                                <td><a href="https://doi.org/10.1038/s41467-020-19614-y" class="doi-link" target="_blank">10.1038/s41467-020-19614-y</a></td>
+                                <td>2020</td>
+                            </tr>
+                            <tr>
+                                <td>A New Spiralian Phylogeny Places the Enigmatic Arrow Worms among Gnathiferans</td>
+                                <td>Current Biology</td>
+                                <td>Marlétaz, F.; Peijnenburg, K.T.C.A.; Goto, T.; Satoh, N.; Rokhsar, D.S.</td>
+                                <td>2019-01-21</td>
+                                <td><a href="https://doi.org/10.1016/j.cub.2018.11.042" class="doi-link" target="_blank">10.1016/j.cub.2018.11.042</a></td>
+                                <td>2019</td>
+                            </tr>
+                            <tr>
+                                <td>Comparative genomics of bdelloid rotifers: Insights from desiccating and nondesiccating species</td>
+                                <td>PLOS Biology</td>
+                                <td>Nowell, R.W.; Almeida, P.; Wilson, C.G.; Smith, T.P.; Fontaneto, D.; Crisp, A.; Micklem, G.; Tunnacliffe, A.; Boschetti, C.; Barraclough, T.G.</td>
+                                <td>2018-04-26</td>
+                                <td><a href="https://doi.org/10.1371/journal.pbio.2004830" class="doi-link" target="_blank">10.1371/journal.pbio.2004830</a></td>
+                                <td>2018</td>
+                            </tr>
+                            <tr>
+                                <td>Horizontal gene transfer in bdelloid rotifers is ancient, ongoing and more frequent in species from desiccating habitats</td>
+                                <td>BMC Biology</td>
+                                <td>Eyres, I.; Boschetti, C.; Crisp, A.; Smith, T.P.; Fontaneto, D.; Tunnacliffe, A.; Barraclough, T.G.</td>
+                                <td>2015-11-04</td>
+                                <td><a href="https://doi.org/10.1186/s12915-015-0202-9" class="doi-link" target="_blank">10.1186/s12915-015-0202-9</a></td>
+                                <td>2015</td>
+                            </tr>
+                            <tr>
+                                <td>Genomic evidence for ameiotic evolution in the bdelloid rotifer Adineta vaga</td>
+                                <td>Nature</td>
+                                <td>Flot, J.F.; Hespeels, B.; Li, X.; Noel, B.; Arkhipova, I.; Danchin, E.G.J.; Hejnol, A.; Henrissat, B.; Koszul, R.; Aury, J.M.; et al.</td>
+                                <td>2013-08-21</td>
+                                <td><a href="https://doi.org/10.1038/nature12326" class="doi-link" target="_blank">10.1038/nature12326</a></td>
+                                <td>2013</td>
+                            </tr>
+                            <tr>
+                                <td>Biochemical diversification through foreign gene expression in bdelloid rotifers</td>
+                                <td>PLOS Genetics</td>
+                                <td>Boschetti, C.; Carr, A.; Crisp, A.; Eyres, I.; Wang-Koh, Y.; Lubzens, E.; Barraclough, T.G.; Micklem, G.; Tunnacliffe, A.</td>
+                                <td>2012-11-01</td>
+                                <td><a href="https://doi.org/10.1371/journal.pgen.1003035" class="doi-link" target="_blank">10.1371/journal.pgen.1003035</a></td>
+                                <td>2012</td>
+                            </tr>
+                            <tr>
+                                <td>Degenerate Tetraploidy Was Established Before Bdelloid Rotifer Families Diverged</td>
+                                <td>Molecular Biology and Evolution</td>
+                                <td>Hur, J.H.; Van Doninck, K.; Mandigo, M.L.; Meselson, M.</td>
+                                <td>2009-02-01</td>
+                                <td><a href="https://doi.org/10.1093/molbev/msn260" class="doi-link" target="_blank">10.1093/molbev/msn260</a></td>
+                                <td>2009</td>
+                            </tr>
+                            <tr>
+                                <td>Massive horizontal gene transfer in bdelloid rotifers</td>
+                                <td>Science</td>
+                                <td>Gladyshev, E.A.; Meselson, M.; Arkhipova, I.R.</td>
+                                <td>2008-05-30</td>
+                                <td><a href="https://doi.org/10.1126/science.1156407" class="doi-link" target="_blank">10.1126/science.1156407</a></td>
+                                <td>2008</td>
+                            </tr>
+                            <tr>
+                                <td>Evidence for the Evolution of Bdelloid Rotifers Without Sexual Reproduction or Genetic Exchange</td>
+                                <td>Science</td>
+                                <td>Mark Welch, D.B.; Meselson, M.</td>
+                                <td>2000-05-19</td>
+                                <td><a href="https://doi.org/10.1126/science.288.5469.1211" class="doi-link" target="_blank">10.1126/science.288.5469.1211</a></td>
+                                <td>2000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Rotifer Database Mock Website.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/literature.js"></script>
+</body>
+</html>
