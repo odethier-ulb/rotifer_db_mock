@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rotifer Database Mock Website</title>
+    <title id="pageTitle">Species Details - Rotifer Database</title>
     <link rel="icon" href="images/logos/favicon.png" type="image/png">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/tools.css">
+    <link rel="stylesheet" href="css/species_details.css">
 </head>
 <body>
     <header>
@@ -19,26 +20,79 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="species_details.html" class="active">Species details</a></li>
+                <li><a href="species.html">Species</a></li>
+                <li><a href="species_details.html" class="active">Species Details</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section class="hero-home">
-            <div class="hero-content">
-                <h2 id="greeting">Hello World!</h2>
-                <p>Welcome to the Rotifer Database mock website.</p>
-                <button onclick="showMessage()" class="cta-button">Click Me!</button>
-                <div id="message" class="hidden"></div>
+    <main style="margin-top: 80px;">
+        <div class="species-container">
+            <!-- Species Header -->
+            <div class="species-header">
+                <h1 class="species-name" id="speciesName">Loading...</h1>
+                <p class="species-taxid" id="taxId">TaxonomyID</p>
             </div>
-        </section>
+
+            <!-- Main Content Grid -->
+            <div class="species-content">
+                <!-- Species Images -->
+                <div class="species-images">
+                    <div class="images-header">
+                        📸 Image Gallery
+                    </div>
+                    <div class="image-gallery" id="imageGallery">
+                        <!-- Images will be loaded here -->
+                    </div>
+                </div>
+
+                <!-- Classification -->
+                <div class="species-classification">
+                    <div class="classification-header">
+                        🔬 Taxonomic Classification
+                    </div>
+                    <div class="classification-content" id="classificationContent">
+                        <!-- Classification will be loaded here -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Downloads Section -->
+            <div class="downloads-section">
+                <div class="downloads-header">
+                    💾 Genomic Resources
+                </div>
+                <div class="downloads-content">
+                    <div class="download-grid" id="downloadsGrid">
+                        <!-- Download links will be loaded here -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Literature Section -->
+            <div class="literature-section">
+                <div class="literature-header">
+                    📚 Associated Literature
+                </div>
+                <div class="literature-content" id="literatureContent">
+                    <!-- Literature will be loaded here -->
+                </div>
+            </div>
+        </div>
     </main>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="modal">
+        <span class="close-modal" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+            <img id="modalImage" src="" alt="">
+        </div>
+    </div>
 
     <footer>
         <p>&copy; 2024 Rotifer Database Mock Website.</p>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="js/species_details.js"></script>
 </body>
 </html>

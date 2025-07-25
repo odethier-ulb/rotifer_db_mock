@@ -47,13 +47,13 @@ function setTimeBasedGreeting() {
     let greeting;
 
     if (hour >= 5 && hour < 12) {
-        greeting = "Good morning!";
-    } else if (hour >= 12 && hour < 17) {
-        greeting = "Good afternoon!";
+        greeting = "Bom dia";
+    } else if (hour >= 12 && hour < 18) {
+        greeting = "Boa tarde";
     } else if (hour >= 17 && hour < 22) {
-        greeting = "Good evening!";
+        greeting = "Boa noite";
     } else {
-        greeting = "Good night!";
+        greeting = "Boa noite";
     }
 
     document.getElementById('greeting').textContent = greeting;
